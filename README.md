@@ -1,6 +1,8 @@
-# Reqres User Management Application
+## User Management Application
+This is a React-based user management application that integrates with the Reqres API to provide basic user management functionalities. The project is divided into three levels of increasing complexity: Authentication, User List, and User Management (Edit/Delete).
 
-This is a React application that integrates with the Reqres API to perform basic user management functions.
+## Live Demo
+You can access the deployed application at the following link: https://user-management-rho-bay.vercel.app/login
 
 ## Features
 
@@ -58,13 +60,3 @@ The application uses the [Reqres API](https://reqres.in/) for all operations:
 - Update User: PUT /api/users/{id}
 - Delete User: DELETE /api/users/{id}
 
-## Important Note About the Reqres API
-
-Reqres.in is a mock API service that simulates real API behavior but doesn't actually persist changes. When you:
-
-1. Edit a user: The API returns a successful response with an "updatedAt" timestamp, but the changes aren't actually saved on their server.
-2. Delete a user: The API returns a 204 status code indicating success, but the user isn't actually removed from their database.
-
-For this reason, this application implements client-side updates - when you edit or delete a user, the changes will appear in the UI but will reset if you refresh the page.
-
-In a real-world application with a production API, the changes would persist on the server. 
